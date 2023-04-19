@@ -1,5 +1,5 @@
 configVersion: 1
-project: app
+project: myproject
 ---
 image: app
 dockerfile: Dockerfile
