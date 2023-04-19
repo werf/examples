@@ -1,5 +1,5 @@
 configVersion: 1
-project: best-practice-gitlab-ci-cd-demo
+project: myproject
 
 {{- if or (env "ENABLE_ALL_IMAGES" | eq "true") (env "ENABLE_APPS_IMAGES" | eq "true") }}
 ---
