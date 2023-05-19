@@ -30,7 +30,7 @@ default:
     name: "registry.werf.io/werf/werf:1.2-stable"
     pull_policy: always
   tags:
-    - "<тег зарегистрированного GitLab Runner>"
+    - "<GitLab Runner>"
 
 .scripts:
   setup_werf: |

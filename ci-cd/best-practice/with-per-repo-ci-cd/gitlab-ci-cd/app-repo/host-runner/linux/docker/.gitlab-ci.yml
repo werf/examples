@@ -27,7 +27,7 @@ workflow:
 
 default:
   tags:
-    - "<тег зарегистрированного GitLab Runner>"
+    - "<GitLab Runner tag>"
 
 .scripts:
   setup_werf: |

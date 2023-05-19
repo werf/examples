@@ -7,18 +7,18 @@ environment_variables:
   WERF_ENABLE_PROCESS_EXTERMINATOR: "1"
 
 before_every_job:
-- werf cr login -u "${REGISTRY_USER:?}" -p "${REGISTRY_PASSWORD:?}" "${WERF_REPO:?}"
+  - werf cr login -u "${REGISTRY_USER:?}" -p "${REGISTRY_PASSWORD:?}" "${WERF_REPO:?}"
 
 jobs:
   prod:
     commands:
-    - werf converge
+      - werf converge
     environment: prod
     on: master
     how: manually
 
   images:cleanup:
     commands:
-    - werf cleanup
+      - werf cleanup
     on: master
     how: daily

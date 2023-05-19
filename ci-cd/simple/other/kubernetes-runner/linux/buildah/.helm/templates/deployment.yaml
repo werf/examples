@@ -12,5 +12,5 @@ spec:
         app: app
     spec:
       containers:
-      - name: app
-        image: {{ .Values.werf.image.app }}
+        - name: app
+          image: {{ .Values.werf.image.app }}
